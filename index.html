@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas-Techno</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+
+<style>
+
+      .text-brand { color: #121a4c !important;
+      font-weight: 500;
+      }
+
+    :root{
+        --soft-blue: #cfe9f3;
+        --soft-cyan: #d6eef1;
+        --soft-yellow:#fde9b3;
+        --soft-gray:#eef1f4;
+        --ink:#2a2e2f;
+        --brand:#9bc8d0;
+        --accent:#92d36e;
+    }
+    body{ font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background:#f6f8fa; }
+    .navbar{ background:#bcd7e6; }
+    .navbar-brand{
+        font-family:"Cabin Sketch", cursive; letter-spacing:.5px; font-size:1.4rem;
+    }
+    .nav-link{ font-weight:700; color:#274b63 !important; }
+    .nav-link.active, .nav-link:focus{ border-bottom:3px solid white; border-radius:0; }
+    /* Hero */
+    .hero{
+        background: #a7cdd1;
+        background: linear-gradient(180deg,#a7cdd1 0%, #a8d0c9 100%);
+        color:#0f2e2e;
+        padding: 72px 0 48px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-card {
+    background: #ffffff;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-card {
+    background: #d6eef5;
+}
+
+    .swiper {
+      width: 600px;
+      max-width: 90%;
+    }
+
+    .swiper-slide {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .user {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: gold;
+      margin-top: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      background: #ccc;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #007bff;
+    }
+
+
+    .hero-illust{
+        aspect-ratio: 16/10;
+        background: #b9dedd;
+        border: 6px solid rgba(255,255,255,.6);
+        border-radius: 18px;
+        box-shadow: 0 20px 40px rgba(0,0,0,.12) inset;
+        display:flex; align-items:center; justify-content:center;
+    }
+    .hero-illust svg{ width:70%; height:auto; opacity:.95; }
+    /* Cards section */
+    .section{ padding: 48px 0; }
+    .soft-card{
+        border:0;
+        border-radius:16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+    .soft-card.blue{ background: var(--soft-blue); }
+    .soft-card.cyan{ background: var(--soft-cyan); }
+    .soft-card.yellow{ background: var(--soft-yellow); }
+    .soft-card.gray{ background: var(--soft-gray); }
+    .icon-badge{
+        width:48px; height:48px; border-radius:12px;
+        display:grid; place-items:center; background:white; box-shadow:0 4px 10px rgba(0,0,0,.08);
+        margin-right:.5rem;
+    }
+    .price{ font-weight:800; }
+
+    .btn-brand{ background: var(--accent); border:0; font-weight:700; }
+    .btn-brand:hover{ filter: brightness(.95); }
+    
+    .hand-title{ color: #2a7eab;  font-family:"Cabin Sketch", cursive; letter-spacing:.5px; }
+    </style>
+
+</head>
+
+
+<!--Navbar star-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(168, 213, 216); sticky-top">
+      <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mini Electronics</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hubungi Kami</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+<!--navbar end-->
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/gambar/Gemini_Generated_Image_scwv6qscwv6qscwv.png" class="img-fluid w-100 d-block" style="width: 50%;" alt="..." style="height: 500px;">
+                    <div class="carousel-caption">
+                  <h5 class="text-brand">Servis Gadget & Elektronik Cepat</h5>
+                    <p class="text-brand">Smartphone retak, laptop lemot, konsol bermasalah? Teknisi kami siap jemput, perbaiki, lalu antar kembali.</p>
+                    </div>
+            </div>
+        </div>
+
+
+  <!--layanan harga-->
+<div class="container ">
+    <div class="row g-1">
+      <h3 class="mb-3 hand-title">
+        Harga Layanan
+    </h3>
+
+    <div class="row g-2">
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card p-4 text-center shadow-sm">
+                <div class="fs-1 mb-2">📱</div>
+                <h5 class="mb-2">Smartphone & Tablet</h5>
+                <p class="fw-bold">Rp 20k+</p>
+                <p>Dilihat dari seberapa parah kerusakan pada barang elektronik anda</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card p-4 text-center shadow-sm">
+                <div class="fs-1 mb-2">💻</div>
+                <h5 class="mb-2">Laptop & PC</h5>
+                <p class="fw-bold">Rp 50k+</p>
+                <p>Dilihat dari seberapa parah kerusakan pada barang elektronik anda</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card p-4 text-center shadow-sm">
+                <div class="fs-1 mb-2">🎮</div>
+                <h5 class="mb-2">Konsol & lainnya</h5>
+                <p class="fw-bold">Rp 30k+</p>
+                <p>Dilihat dari seberapa parah kerusakan pada barang elektronik anda</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card p-4 text-center shadow-sm">
+                <div class="fs-1 mb-2">🔌</div>
+                <h5 class="mb-2">Barang kecil lainnya</h5>
+                <p class="fw-bold">Rp 15k+</p>
+                <p>Dilihat dari seberapa parah kerusakan pada barang elektronik anda</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+      <!-- FAQ mini -->
+      <div class="row g-4 mt-1">
+        <div class="col-12 mb-4">
+          <div class="card soft-card gray">
+            <div class="card-body">
+              <h5 class="hand-title mb-3">FAQ</h5>
+              <div class="accordion" id="faq">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#f1">Apakah bisa jemput-antar?</button>
+                  </h2>
+                  <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                    <div class="accordion-body">Bisa, area dalam kota gratis minimal biaya servis Rp100k.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">Garansi berapa lama?</button>
+                  </h2>
+                  <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                    <div class="accordion-body">Garansi 30–90 hari sesuai jenis perbaikan dan suku cadang.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header"> 
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">Apa menerima barang elektronik besar seperti TV,Kulkas DLL</button>
+                  </h2>
+                  <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                    <div class="accordion-body">Tidak, karena keterbatasan dari tim service kami</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 mb-4">
+          <div class="card soft-card gray">
+            <div class="card-body">
+              <h5 class="hand-title mb-3">Tukang Service</h5>
+              <ul class="mb-0">
+                <li>Marwandi — Spesialis HP & Tablet</li>
+                <li>Andi — Laptop & PC</li>
+                <li>Simpro — Konsol & Joystick</li>
+                <li>George — Software </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cara Kerja -->
+  <section id="carakerja" class="section">
+    <div class="container">
+      <h2 class="hand-title mb-4">Cara Kerja</h2>
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <div class="soft-card card p-3 text-center h-100">
+            <div class="fs-2">📩</div>
+            <div>Kirim keluhan</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="soft-card card p-3 text-center h-100">
+            <div class="fs-2">🧑‍🔧</div>
+            <div>Diagnosa & estimasi</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="soft-card card p-3 text-center h-100">
+            <div class="fs-2">🛠️</div>
+            <div>Perbaikan</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="soft-card card p-3 text-center h-100">
+            <div class="fs-2">🚚</div>
+            <div>Antar Jemput</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--testimonial-->
+  <div class="container my-5">
+  <h2 class="hand-title mb-4">Testimoni</h2>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-4">
+      <!-- Swiper Testimonial -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide text-center p-4 shadow rounded-4 bg-white">
+            <div class="user fs-5 mb-2">Anonymus</div>
+            <p class="mb-3">
+              "Layanan ramah dan tepat waktu"
+            </p>
+            <div class="text-warning">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="swiper-slide text-center p-4 shadow rounded-4 bg-white">
+            <div class="user fs-5 mb-2">Anonymus</div>
+            <p class="mb-3">"Garansi sangat terjamin jadi tidak usah takut"</p>
+            <div class="text-warning">⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="swiper-slide text-center p-4 shadow rounded-4 bg-white">
+            <div class="user fs-5 mb-2">Anonymus</div>
+            <p class="mb-3">"Tukang Servicenya pada baik-baik dan profesional"</p>
+            <div class="text-warning">⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="swiper-slide text-center p-4 shadow rounded-4 bg-white">
+            <div class="user fs-5 mb-2">Anonymus</div>
+            <p class="mb-3">"ada layanan ambil-antar jadi sangat memudahkan yang tidak punya kendaraan"</p>
+            <div class="text-warning">⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-3"></div>
+      </div>
+      <!-- /Swiper -->
+    </div>
+  </div>
+</div>
+
+    <!--Reach us-->
+    <div class="container">
+          <h2 class="hand-title md-3">Hubungi Kami</h2>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 p-4 mb-lg0 mb-3 bg-white rounded">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15709.567867038013!2d123.665741!3d-10.1487592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c56837726ab4c33%3A0x62b8be77d3be50fb!2sKost%20Cantik%2023!5e0!3m2!1sen!2sid!4v1762726048179!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="bg-white p-4 rounded mb-4">
+                    <h5>Hubungi Saja</h5>
+                    <a href="tel: 6287740934606" class="d-inline-block mb-2 text-decoration-none text-dark">
+                        <i class="bi bi-telephone-fill"></i>+62189452676
+                    </a>
+                    <br>
+                    <a href="https://wa.me/6287740934606" class=" badge bg-light text-dark fs-6 p-2 whatsapp-link d-inline-block mb-2 text-decoration-none">
+                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded mb-4">
+                    <h5>Media Sosial</h5>
+                    <a href="https://twitter.com/hotelxavions" class="d-inline-block mb-2">
+                        <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="bi bi-twitter me-2"></i>Twitter
+                        </span>
+                    </a>
+                    <br>
+                    <a href="https://facebook.com/hotelxavions" class="d-inline-block mb-2">
+                        <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="bi bi-facebook me-2"></i>Facebook
+                        </span>
+                    </a>
+                    <br>
+                    <a href="https://instagram.com/hotelxavions" class="d-inline-block mb-2">
+                        <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="bi bi-instagram me-2"></i>Instagram
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Reach us end-->
+
+
+  <!-- Footer -->
+    <div class="container-fluid bg-white mt-5">
+        <div class="row">
+            <div class="col-lg-4 p-4">
+                <h3 class="hand-title fs-3 mb-2">Mini Electronics</h3>
+                <p>Mini Electronics adalah layanan perbaikan elektronik yang berkomitmen memberikan hasil terbaik untuk setiap pelanggan. Dengan teknisi berpengalaman dan proses perbaikan yang mengikuti standar industri, kami memastikan setiap perangkat kembali berfungsi optimal. Kepercayaan dan kenyamanan pelanggan adalah prioritas utama kami dalam setiap layanan.</p>
+            </div>
+            <div class="col-lg-4 p-4">
+                <h5 class="mb-3">Links</h5>
+                <a href="" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a> <br>
+                <a href="" class="d-inline-block mb-2 text-dark text-decoration-none">Facilities</a> <br>
+                <a href="" class="d-inline-block mb-2 text-dark text-decoration-none">Contact Us</a> <br>
+                <a href="" class="d-inline-block mb-2 text-dark text-decoration-none">About</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+          function handleSubmit(e){
+      e.preventDefault();
+      document.getElementById('alertBox').classList.remove('d-none');
+      e.target.reset();
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+</body>
+</html>
